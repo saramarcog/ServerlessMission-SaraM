@@ -1,11 +1,12 @@
-# NOCTURNA · Senderismo Nocturno (Serverless AWS)
+# NOCTURNA · Club de Senderismo Nocturno (Serverless AWS)
 
 Proyecto para la misión serverless. Es una landing page para reservar plazas en rutas de un Club de senderismo nocturno, conectada a un backend serverless en AWS.
 
 ## Enlaces del proyecto
-- **GitHub Pages:** https://saramarcog.github.io/ServerlessMission-SaraM/
-- **Amazon S3:** http://nighthike-frontend-saram-2026.s3-website-us-east-1.amazonaws.com/
-- **API Gateway (POST):** https://7jjt9avvlc.execute-api.us-east-1.amazonaws.com/dev/reservations
+- **GitHub Pages:** [https://saramarcog.github.io/ServerlessMission-SaraM/](https://saramarcog.github.io/ServerlessMission-SaraM/)
+- **Amazon S3:** [http://nighthike-frontend-saram-2026.s3-website-us-east-1.amazonaws.com/](http://nighthike-frontend-saram-2026.s3-website-us-east-1.amazonaws.com/)
+- **API Gateway (POST):** [https://7jjt9avvlc.execute-api.us-east-1.amazonaws.com/dev/reservations](https://7jjt9avvlc.execute-api.us-east-1.amazonaws.com/dev/reservations)
+- **Repositorio de GitHub:** [https://github.com/saramarcog/ServerlessMission-SaraM](https://github.com/saramarcog/ServerlessMission-SaraM)
 
 ## Cómo funciona la arquitectura
 1. El usuario entra a la web (alojada en S3 o GitHub Pages) y rellena el formulario con su nombre, email y la ruta elegida.
@@ -25,6 +26,6 @@ Proyecto para la misión serverless. Es una landing page para reservar plazas en
 Para probar la API de forma aislada sin usar la web:
 
 ```bash
-curl -X POST [https://7jjt9avvlc.execute-api.us-east-1.amazonaws.com/dev/reservations](https://7jjt9avvlc.execute-api.us-east-1.amazonaws.com/dev/reservations) \
+curl -X POST https://7jjt9avvlc.execute-api.us-east-1.amazonaws.com/dev/reservations \
   -H "Content-Type: application/json" \
   -d '{"name": "Sara Marco", "email": "sara@ejemplo.com", "interest": "Ruta Luna Llena"}'
