@@ -6,7 +6,7 @@
       "Effect": "Allow",
       "Principal": "*",
       "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::NOMBRE-DE-TU-BUCKET/*"
+      "Resource": "arn:aws:s3:::nighthike-frontend-saram-2026/*"
     }
   ]
 }
